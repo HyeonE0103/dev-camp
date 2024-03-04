@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [ 데브캠프 ]
+<details>
+<summary> 첫째날 </summary>
 
-## Getting Started
+###  shadcn/ui
+Radix UI와 tailwind css로 만들어진 재사용 가능한 컴포넌트
 
-First, run the development server:
+##### Radix UI란?
+높은 퀄리티와 접근 가능한 디자인 시스템 및 웹 앱을 구축하기 위한 오픈소스 UI 컴포넌트 라이브러리
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Radix Primitives는 접근성, 커스텀, 개발 경험에 중점을 둔 하위 수준의 UI 컴포넌트 이 컴포넌트들을 설계 시스템의 기본 디자인 시스템으로 사용하거나 점진적으로 채택할 수 있음
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 장점
+- 종속성으로 설치하는 것이 아닌 복사하여 붙여 넣을 수 있는 재사용 가능한 구성 요소 모음
+- Tailwind CSS와 통합된 경량 라이브러리, 간단하고 빠르게 시작할 수 있음
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### 단점
+- 컴포넌트의 다양성이 다소 부족할 수 있음, 커스터마이징 기능이 상대적으로 적음
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+즉 경량하면서도 간단한 사용을 원한다면 shadcn/ui가 하나의 선택지가 될 수 있음
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+###  Zod
+정적 유형 추론을 사용한 TypeScript-first 스키마 유효성 검사
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##### 스키마란?
+데이터의 형태 및 구조
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### 장점
+- 유형 안전 검증을 위한 강력한 TypeScript 지원
+- 강력한 검증 기능과 풍부한 검증 API
+  - 타입을 알수 없는 외부 데이터를 타입 안전하게 다룰 수 있음
+- 뛰어난 오류 메시지 및 오류 처리
 
-## Deploy on Vercel
+#### 단점
+- TypeScript에 익숙하지 않은 개발자를 위한 학습 곡선
+- TypeScript를 사용하지 않는 프로젝트에 오버헤드가 추가될 수 있음
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+###  React Hook Form
+React 기반의 폼 관리 라이브러리로, 간단하고 효율적인 방식으로 폼 유효성 검사와 상태 관리를 처리할 수 있게 도와줌 이를 통해 개발자는 많은 부분을 직접 구현할 필요 없이 더욱 빠르고 효과적인 폼 개발에 집중할 수 있음
+
+#### 장점
+- 성능 최적화
+  - 내부적으로 성능 최적화를 고려하여 설계되어 입력 필드 갱신 및 다시 렌더링을 최소화하여 불필요한 작업을 방지하고 빠른 사용자 경험을 제공
+ 
+- 간편한 API
+  - 사용하기 쉽고 직관적인 API를 제공하여 이를 통해 개발자는 복잡한 폼 로직을 간결하게 작성할 수 있음
+ 
+- 유연성과 확장성
+  - 다양한 유효성 검사 규칙과 커스텀 유효성 검사 규칙을 사용하여 폼의 요구사항을 쉽게 처리할 수 있음
+  - 커스텀 컴포넌트와의 통합이 간단하며, 다른 상태 관리 라이브러리와도 함께 사용할 수 있음
+
+#### 단점
+- TypeScript에 익숙하지 않은 개발자를 위한 학습 곡선
+- TypeScript를 사용하지 않는 프로젝트에 오버헤드가 추가될 수 있음
+
+</details>
